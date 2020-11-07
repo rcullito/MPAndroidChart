@@ -143,7 +143,7 @@ public abstract class Chart<T extends ChartData<? extends IDataSet<? extends Ent
     /**
      * text that is displayed when the chart is empty
      */
-    private String mNoDataText = "No chart data available.";
+    private String mNoDataText = "Chart data loading...";
 
     /**
      * Gesture listener for custom callbacks when making gestures on the chart.
@@ -232,7 +232,7 @@ public abstract class Chart<T extends ChartData<? extends IDataSet<? extends Ent
         mDescPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         mInfoPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mInfoPaint.setColor(Color.rgb(247, 189, 51)); // orange
+        mInfoPaint.setColor(Color.rgb(72, 61, 139)); // midnight blue
         mInfoPaint.setTextAlign(Align.CENTER);
         mInfoPaint.setTextSize(Utils.convertDpToPixel(12f));
 
